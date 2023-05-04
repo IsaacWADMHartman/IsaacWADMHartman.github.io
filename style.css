@@ -1,10 +1,108 @@
-h1 {
+/* Set the scroll behavior to smooth so that when you click the in the header, the screen scrolls down rather than jumps */
+html {
+    scroll-behavior: smooth;
+  }
+  
+  /* Set the margin to 0 to make sure the page stretches all the way to the edge of the browser window. */
+  body {
+    margin: 0;
+  }
+  header, footer {
+    background-color: orangered;
+    text-align: center;
+  /*  min-width: 500px; */
+  }
+  header {
+    font-family: Work Sans;
     color: maroon;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    min-height: 35vh;
+    display: flex;
+  }
+  main {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(40%, 1fr) ) ;
+    grid-gap: 20px;
+    margin-top: 44px;
+  
+    justify-items: center;
+    justify-content: center;
+    align-items: stretch;
+    align-content: center;
+  }
+  h1 {
+    font-family: Poppins;
+    font-size: calc(1em + 3vw);
+    padding-bottom: .67em;
+    border-bottom: 1px solid;
+    line-height: 1.3;
+  }
+  .wrapper {
+    max-width: 1150px;
+    margin: auto;
+    padding: 50px;
+    display: block;
 }
-p {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+.bio {
+  color: maroon;
+  font-size: 24px;
+  font-family: 'Work Sans';
 }
-a {
-    color: orangered;
-}
+.buttonBox {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+  }
+  
+  .myButton {
+    border-radius: 28px;
+    border: 1px solid maroon;
+    cursor: pointer;
+    color: maroon;
+    font-size: 20px;
+    padding: 16px 31px;
+    text-decoration: none;
+    margin: 1.69em auto;
+  }
+  
+  .myButton:hover {
+      background-color: whitesmoke;
+  }
+  
+  .myButton:active {
+      position:relative;
+      top:1px;
+  }
+  .container {
+    /*  min-width: 500px; */
+      margin: auto;
+    }
+    @media all and (max-width:700px) {
+        main {
+          grid-template-columns: 1fr;
+        }
+      }
+      @media all and (max-width:700px) {
+        main {
+          grid-template-columns: 1fr;
+        }
+        .description {
+          font-size: 18px;
+        }
+      }
+    img{
+    width: 100%;
+    height: 50vh;
+    object-fit: cover;
+    object-position: center top
+    }
+    body{
+        color: orangered;
+    }
+    a {
+        color: maroon;
+    }
+    
+    
+
+
